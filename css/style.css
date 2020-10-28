@@ -126,11 +126,52 @@ body {
     float: left;
 }
 
+
+/* main_banner */
+#main_banner {
+    /* 가변 크기, 한계값 설정 */
+    max-width: 1920px;
+    min-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+  
+    position: relative;
+  }
+  
+  .sliders {
+    height: 600px;
+  }
+  .sliders > img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* pager */
+  .pager {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    /* 자기 자신의 너비의 50%만큼 왼쪽으로 이동 */
+    transform: translateX(-50%);
+  }
+  
+  .pager > a {
+    /* 박스로 바꾸기 위해 */
+    float: left;
+    width: 16px; height: 16px;
+   margin: 6px;
+    background: #dedede;
+    border-radius: 50%;
+    text-indent: -999px;
+  }
+  
+  .pager > a.active { background:  #2e2e2e;}
+
 /* 텍스트 슬라이드 */
 #notice {
     width: 1202px;
     margin: 0 auto;
-    margin-top: 550px;
 }
 #notice > .notice {
     position: relative;
@@ -166,7 +207,7 @@ body {
 }
   
 #notice > .notice > .animated > .ani_text:first-child {
-    animation: anim 10s infinite;
+    animation: anim 20s infinite;
 }
 @keyframes anim {
     0%{
@@ -241,8 +282,8 @@ body {
     overflow: hidden;
 }
 #choice > #choice_menu > .choice_menu > .choice_img:hover > a > img {
-    transform: scale(1.07);
-    transition-duration: 1.5s;
+    transform: scale(1.05);
+    transition-duration: 0.7s;
 }
 
 /* membership */
@@ -345,8 +386,8 @@ body {
     border-radius: 30px;
 }
 #new_menu_list > .new_menu_list > .nwe_img:hover > a > img {
-    transform: scale(1.07);
-    transition-duration: 1.5s;
+    transform: scale(1.05);
+    transition-duration: 0.7s;
 }
 
 /* coffee lab */
@@ -545,8 +586,8 @@ body {
 #gallery > .gallery_sns > .sns_zoom10:hover > a > img,
 #gallery > .gallery_sns > .sns_zoom11:hover > a > img,
 #gallery > .gallery_sns > .sns_zoom12:hover > a > img {
-    transform: scale(1.07);
-    transition-duration: 0.8s;
+    transform: scale(1.05);
+    transition-duration: 0.7s;
 }
 
 /* sns_text 전체 텍스트 위치 */
@@ -689,6 +730,7 @@ body {
     top: 58.5px; left: 280.1px;
     width: 145px; height: 64px;
     border-left: 1px solid rgba(255, 255, 255, 0.7);
+    opacity: 0.3;
 }
 #main_footer  > .main_footer > .footer_text {
     position: absolute;
@@ -703,6 +745,7 @@ body {
     top: 58.5px; right: 240.6px; 
     width: 105px; height: 64px;
     border-right: 1px solid rgba(255, 255, 255, 0.7);
+    opacity: 0.3;
     
 }
 #main_footer  > .main_footer > .footer_sns {
