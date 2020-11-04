@@ -12,8 +12,8 @@ body {
 
 /* font */
 @font-face {
-    font-family:'Breton-Bold';
-    src: url('../font/Breton-Bold.ttf');
+  font-family:'Heebo-Bold';
+  src: url('../font/Heebo-Bold.ttf');
   }
 
 /* header */
@@ -97,67 +97,73 @@ body {
 
 /* title 영역 */
 #title {
-    max-width: 100%;
-    min-width: 1200px;
-    height: 350px;
-    background-image: url(../images/title.png);
-    background-size: cover;
-    text-align: center;
-    line-height: 350px;
-    text-transform: uppercase;
-    font-size: 62px;
-    font-family: 'Breton';
-  }
+  max-width: 100%;
+  min-width: 1200px;
+  height: 350px;
+  background-image: url(../images/title2.jpg);
+  background-size: cover;
+}
   
-  #title > h1 {
-    color: #fff;
-  }
-  
-  .location {
-    width: 1200px; height: 50.5px;
-    margin: 0 auto;
-    line-height: 50.5px;
-    border-bottom: 1px solid #ccc;
-    font-size: 12px;
-  }
-  
-  .location span {
-    color: #999;
-  }
-  
-  .location > p {
-    float: right;
-  }
-  
-  .wrap {
-    width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 95.5px;
-    margin-bottom: 37.4px;
-  }
-  
-  .btn {
-    display: inline-block;
-    width: 135.35px; height: 45px;
-    line-height: 45px;
-    border: 1px solid #2e2e2e;
-    border-radius: 10px;
-    font-size: 14px;
-    margin-right: 10px;
-  }
-  
-  .btn:nth-child(3),
-  .btn:hover {
-    background: #2e2e2e;
-    color: white;
-  }
-  
-  
+.location {
+  width: 1200px; height: 50.5px;
+  margin: 0 auto;
+  line-height: 50.5px;
+  font-size: 12px;
+}
+.location h1 {
+  margin-top: 64px;
+  text-align: center;
+  font-size: 48px;
+  font-family:'Heebo-Bold';
+}
+.location span {
+  color: #999;
+}
+
+.location > p {
+  text-align: center;
+}
+
+/* 버튼 영역 */
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 95.5px;
+}
+
+.btn {
+  display: inline-block;
+  width: 128px; height: 54px;
+  padding: 5px;
+  line-height: 54px;
+  font-size: 15px;
+  margin-right: 50px;
+  text-align: center;
+}
+
+
+.btn:last-child,
+.btn:hover {
+    color: #2e2e2e;
+    border-bottom: 3px solid black;
+    font-weight: bold;
+}
+
+.btn:last-child {
+    margin-right: 0;
+}
+
+.line {
+  margin: 0 auto;
+  width: 1900px; height: 6px;
+  background-image: linear-gradient(to bottom, rgba(201, 198, 198, 0.8) , white);
+}
+
   #local {
     position: relative;
     margin: 0 auto;
-    font-family: 'Breton';
+    font-family:'Heebo-Bold';
     font-weight: bold;
     font-size: 52px;
     text-align: center;
@@ -167,8 +173,9 @@ body {
   
   #loca2 {
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
+    font-weight: bold;
   }
   
   
@@ -176,7 +183,7 @@ body {
     width: 1200px;
     margin: 0 auto;
     display: block;
-    margin-bottom: 110px;
+    margin-bottom: 120.7px;;
     /* outline: 2px solid red; */
   }
   
@@ -209,21 +216,9 @@ body {
     margin-top: 20px;
   }
   
-  .line {
-    width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .bar {
-    width: 2px; height: 200.83px;
-    background: #ccc;
-    margin: 0 auto;
-    margin-top: 94.5px;
-    margin-bottom: 118px;
-  }
-  
   #navi{
     margin: 0 auto;
+    margin-top: 60px;
     width: 1200px;
     overflow: hidden;
   }
@@ -245,13 +240,13 @@ body {
 
 #main_footer  > .main_footer > #footer_logo {
   position: absolute;
-  width: 135px; height: 93px;
+  width: 80px; height: 80px;
   left: 0; top: 49.5px;
   /* padding-top: 49.5px; */
 }
 
 #main_footer  > .main_footer > #footer_logo img {
-  width: 135px; height: 93px;
+  width: 80px; height: 80px;
   opacity: 0.6;
 }
 

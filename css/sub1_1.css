@@ -12,8 +12,8 @@ body {
 
 /* font */
 @font-face {
-    font-family:'Breton-Bold';
-    src: url('../font/Breton-Bold.ttf');
+    font-family:'Heebo-Bold';
+    src: url('../font/Heebo-Bold.ttf');
   }
 
 /* header */
@@ -28,6 +28,7 @@ body {
 #main_header > #logo > a > img{
     width: 57px; height: 61px;
     margin-top: 20px;
+    
 }
 
 /* gnb */
@@ -100,57 +101,51 @@ body {
     max-width: 100%;
     min-width: 1200px;
     height: 350px;
-    background-image: url(../images/title.png);
+    background-image: url(../images/title.jpg);
     background-size: cover;
-    text-align: center;
-    line-height: 350px;
-    text-transform: uppercase;
-    font-size: 62px;
-    font-family: 'Breton-Bold';
-}
-
-#title > h1 {
-    color: #fff;
 }
 
 .location {
     width: 1200px; height: 50.5px;
     margin: 0 auto;
     line-height: 50.5px;
-    border-bottom: 1px solid #ccc;
     font-size: 12px;
 }
-
+.location h1 {
+    margin-top: 64px;
+    text-align: center;
+    font-size: 48px;
+    font-family:'Heebo-Bold';
+}
 .location span {
     color: #999;
 }
 
 .location > p {
-    float: right;
+    text-align: center;
 }
 
 /* 버튼 영역 */
 .wrap {
     width: 1200px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     margin-top: 95.5px;
 }
 
 .btn {
     display: inline-block;
-    width: 135.35px; height: 45px;
-    line-height: 45px;
-    border: 1px solid #2e2e2e;
-    border-radius: 10px;
-    font-size: 14px;
-    margin-right: 10px;
+    width: 128px; height: 54px;
+    padding: 5px;
+    line-height: 54px;
+    font-size: 15px;
+    margin-right: 50px;
+    text-align: center;
 }
-
-.btn:first-child,
-.btn:hover {
-    background: #2e2e2e;
-    color: white;
+.btn:first-child, .btn:hover {
+    color: #2e2e2e;
+    border-bottom: 3px solid black;
+    font-weight: bold;
 }
 
 .btn:last-child {
@@ -162,14 +157,9 @@ body {
     width: 1200px;
     margin: 0 auto;
     text-align: center;
-    margin-top: 30.4px;
+    margin-top: 60px;
 }
 
-#visual > h1 {
-    font-size: 52px;
-    font-family: 'Breton-Bold';
-    margin-top: 30px;
-}
 
 #visual > p {
     font-size: 20px;
@@ -177,50 +167,43 @@ body {
 }
 
 .line {
-    width: 1200px;
     margin: 0 auto;
+    width: 1900px; height: 6px;
+    background-image: linear-gradient(to bottom, rgba(200, 201, 198, 0.8) , white);
 }
-
 .bar {
     width: 2px; height: 200.83px;
     background: #ccc;
     margin: 0 auto;
     margin-top: 93.5px;
-    margin-bottom: 92.7px;
 }
 
-.story {
-    width: 1200px; height: 269.77px;
+.story_myunngga {
+    width: 1200px;
     margin: 0 auto;
-    margin-bottom: 30.5px;
-    display: block;
+    margin-top: 120px;
+}
+.story {
+    width: 590px;
+    margin: 0 auto;
+    margin-left: 10px;
+
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.story > .memo1 {
+.story > .memo1, .memo2, .memo3, .memo4 {
     float: left;
-    margin-left: 61.2px;
-    margin-top: 16px;
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 270px; height: 270px;
 }
-.story > .memo2 {
-    float: left;
-    margin-left: 61.2px;
-    margin-top: 58px;
-}
-.story > .memo3 {
-    float: left;
-    margin-left: 61.2px;
-    margin-top: 58px;
-}
-.story > .memo4 {
-    float: left;
-    margin-left: 61.2px;
-    margin-top: 58px;
-}
-
 
 .story > .img {
     float: left;
     width: 269.77px; height: 269.77px;
+
 }
 
 .story > .memo1 > h2,
@@ -228,18 +211,18 @@ body {
 .story > .memo3 > h2,
 .story > .memo4 > h2 {
     margin-bottom: 10px;
-    font-size: 32px;
+    font-size: 20px;
 }
 
 .story > .memo1 > p,
 .story > .memo2 > p,
 .story > .memo3 > p,
 .story > .memo4 > p {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .story_margin {
-    margin-bottom: 120.7px;
+    margin-bottom: 60.7px;
 }
 
 /* footer */
@@ -259,13 +242,13 @@ body {
 
 #main_footer  > .main_footer > #footer_logo {
     position: absolute;
-    width: 135px; height: 93px;
+    width: 80px; height: 80px;
     left: 0; top: 49.5px;
     /* padding-top: 49.5px; */
 }
 
 #main_footer  > .main_footer > #footer_logo img {
-    width: 135px; height: 93px;
+    width: 80px; height: 80px;
     opacity: 0.6;
 }
 
